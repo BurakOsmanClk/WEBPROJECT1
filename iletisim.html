@@ -35,7 +35,34 @@
       <main>
         <section>
           <h1>İletişim</h1>
+          <p>İstek, şikayet ve önerilerinizi benimle paylaşabiliriz.</p>
         </section>
+        <article>
+          <form action="/iletisim.php" method="post" autocomplete="on">
+            <label for="ad">Adı:</label><br>
+            <input type="text" id="ad" name="ad" autofocus><br>
+            <label for="soyad">Soyadı:</label><br>
+            <input type="text" id="soyad" name="soyad"><br>
+            <label for="eposta">eposta:</label><br>
+            <input type="email" name="eposta"><br>
+            <label for="cinsiyet">Cinsiyetiniz: </label><br>
+            <input type="radio" id="erkek" name="cinsiyet" value="erkek">
+            <label for="erkek">Erkek</label><br>
+            <input type="radio" id="kadin" name="cinsiyet" value="kadin">
+            <label for="kadin">Kadın</label><br>
+            <input type="checkbox" id="yorum" name="yorum" value="yorum">
+            <label for="vehicle1">Yorum</label><br>
+            <input type="checkbox" id="istek" name="istek" value="istek">
+            <label for="vehicle2">İstek</label><br>
+            <input type="checkbox" id="sikayet" name="sikayet" value="sikayet">
+            <label for="vehicle3">Şikayet</label><br>
+            <label for="dosya">Dosya Seçiniz</label>
+            <input type="file" name="dosya" id="dosya" multiple><br>
+            <textarea name="mesaj" id="mesaj" rows="5" cols="20">Metninizi buraya yazınız.</textarea><br>
+            <input type="submit" value="Gönder">
+            <input type="reset" value="Reset">
+          </form>
+        </article>
       </main>
       
     </body>

@@ -2,11 +2,84 @@
 <html lang="tr-TR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <title>Giriş Yap</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="kayit.css">
+    <title>Giriş Yap</title> 
 </head>
-<body>
-    
+<body> 
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Giriş</span>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Eposta giriniz" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Şifrenizi giriniz" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Beni Hatırla</label>
+                        </div>                
+                        <a href="#" class="text">Şifremi unuttum </a>
+                    </div>
+                    <div class="input-field button">
+                        <input type="button" value="Login">
+                    </div>
+                </form>
+                <div class="login-signup">
+                    <span class="text">Kayıtlı değil misiniz ?
+                        <a href="#" class="text signup-link">Şimdi Kaydolun</a>
+                    </span>
+                </div>
+            </div>
+            <div class="form signup">
+                <span class="title">Kayıt</span>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Adınızı giriniz" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Eposta giriniz" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="şifre giriniz" required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="şifrenizi tekrar giriniz" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="termCon">
+                            <label for="termCon" class="text">Tüm şartları kabul ediyorum</label>
+                        </div>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="Kaydol">
+                    </div>
+                </form>
+                <div class="login-signup">
+                    <span class="text">Zaten Kayıtlı mısın ?
+                        <a href="#" class="text login-link">Giriş Yap</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <script src="kayit.js"></script> 
 </body>
 </html>
